@@ -1,0 +1,104 @@
+@mixin desktop {
+  @media screen and (min-width: 1024px) {
+    @content;
+  }
+}
+@mixin b-desktop {
+  @media screen and (min-width: 1500px) {
+    @content;
+  }
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body,
+html {
+  overflow: hidden;
+  height: 100%;
+  width: 100%;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+main {
+  background-image: url(./../assets/img/bg.png);
+  background-position: left center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  align-items: center;
+  justify-content: center;
+  padding: 50px;
+  height: 100%;
+  width: 100%;
+  @include desktop {
+    padding: 90px;
+    gap: 30px;
+    background-position: center;
+  }
+  @include b-desktop {
+    gap: 50px;
+  }
+  .logo {
+    max-width: 604px;
+    width: 100%;
+    @include b-desktop {
+      max-width: 754px;
+    }
+  }
+  .ancor {
+    padding: 7px 25px;
+    border: #fff 3px solid;
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50px;
+    background: linear-gradient(to bottom right, #add100 23%, #88992f 50%)
+        bottom right / 50% 50% no-repeat,
+      linear-gradient(to bottom left, #add100 23%, #88992f 50%) bottom left /
+        50% 50% no-repeat,
+      linear-gradient(to top left, #add100 23%, #88992f 50%) top left / 50% 50%
+        no-repeat,
+      linear-gradient(to top right, #add100 23%, #88992f 50%) top right / 50%
+        50% no-repeat;
+    box-shadow: 0 0 8px #aaaaaa;
+    &:hover {
+      text-decoration: none;
+      box-shadow: 0 0 8px #000000;
+    }
+    @include desktop {
+      border: #fff 6px solid;
+    }
+    img {
+      width: 25px;
+      @include desktop {
+        width: auto;
+      }
+    }
+    .desc {
+      color: #000;
+      font-size: 20px;
+      font-weight: 500;
+      margin: 0;
+      padding: 0;
+      @include desktop {
+        font-size: 35px;
+      }
+    }
+  }
+  .clocks {
+    max-width: 684px;
+    width: 100%;
+    @include b-desktop {
+      max-width: 784px;
+    }
+  }
+}

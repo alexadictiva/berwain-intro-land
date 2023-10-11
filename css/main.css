@@ -1,0 +1,100 @@
+* {
+  box-sizing: border-box;
+}
+
+body,
+html {
+  overflow: hidden;
+  height: 100%;
+  width: 100%;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+main {
+  background-image: url(./../assets/img/bg.png);
+  background-position: left center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  align-items: center;
+  justify-content: center;
+  padding: 50px;
+  height: 100%;
+  width: 100%;
+}
+@media screen and (min-width: 1024px) {
+  main {
+    padding: 90px;
+    gap: 30px;
+    background-position: center;
+  }
+}
+@media screen and (min-width: 1500px) {
+  main {
+    gap: 50px;
+  }
+}
+main .logo {
+  max-width: 604px;
+  width: 100%;
+}
+@media screen and (min-width: 1500px) {
+  main .logo {
+    max-width: 754px;
+  }
+}
+main .ancor {
+  padding: 7px 25px;
+  border: #fff 3px solid;
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50px;
+  background: linear-gradient(to bottom right, #add100 23%, #88992f 50%) bottom right/50% 50% no-repeat, linear-gradient(to bottom left, #add100 23%, #88992f 50%) bottom left/50% 50% no-repeat, linear-gradient(to top left, #add100 23%, #88992f 50%) top left/50% 50% no-repeat, linear-gradient(to top right, #add100 23%, #88992f 50%) top right/50% 50% no-repeat;
+  box-shadow: 0 0 8px #aaaaaa;
+}
+main .ancor:hover {
+  text-decoration: none;
+  box-shadow: 0 0 8px #000000;
+}
+@media screen and (min-width: 1024px) {
+  main .ancor {
+    border: #fff 6px solid;
+  }
+}
+main .ancor img {
+  width: 25px;
+}
+@media screen and (min-width: 1024px) {
+  main .ancor img {
+    width: auto;
+  }
+}
+main .ancor .desc {
+  color: #000;
+  font-size: 20px;
+  font-weight: 500;
+  margin: 0;
+  padding: 0;
+}
+@media screen and (min-width: 1024px) {
+  main .ancor .desc {
+    font-size: 35px;
+  }
+}
+main .clocks {
+  max-width: 684px;
+  width: 100%;
+}
+@media screen and (min-width: 1500px) {
+  main .clocks {
+    max-width: 784px;
+  }
+}
