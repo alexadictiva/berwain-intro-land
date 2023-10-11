@@ -38,7 +38,7 @@ main {
   background-size: cover;
   display: flex;
   flex-direction: column;
-  gap: 50px;
+  gap: 30px;
   align-items: center;
   justify-content: center;
   padding: 50px 0;
@@ -54,6 +54,7 @@ main {
   }
   h1 {
     padding: 0 50px;
+    margin: 0;
     @include desktop {
       padding: 0 90px;
     }
@@ -66,14 +67,14 @@ main {
     }
   }
   .ancor {
-    padding: 7px 25px;
+    padding: 0px 25px;
     border: #fff 3px solid;
     display: flex;
     gap: 8px;
     align-items: center;
     justify-content: center;
     border-radius: 50px;
-    padding: 0 50px;
+    margin-bottom: 20px;
     background: linear-gradient(to bottom right, #add100 23%, #88992f 50%)
         bottom right / 50% 50% no-repeat,
       linear-gradient(to bottom left, #add100 23%, #88992f 50%) bottom left /
@@ -89,13 +90,12 @@ main {
     }
 
     @include desktop {
-      padding: 0 90px;
       border: #fff 6px solid;
     }
     img {
       width: 25px;
       @include desktop {
-        width: auto;
+        width: 35px;
       }
     }
     .desc {
