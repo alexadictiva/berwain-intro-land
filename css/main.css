@@ -7,6 +7,7 @@ html {
   overflow: hidden;
   height: 100%;
   width: 100%;
+  font-family: "Poppins", sans-serif;
 }
 
 img {
@@ -27,17 +28,61 @@ main {
   padding: 50px 0;
   height: 100%;
   width: 100%;
+  /*.ancor {
+    padding: 0px 25px;
+    border: #fff 3px solid;
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50px;
+    margin-bottom: 20px;
+    background: linear-gradient(to bottom right, #add100 23%, #88992f 50%)
+        bottom right / 50% 50% no-repeat,
+      linear-gradient(to bottom left, #add100 23%, #88992f 50%) bottom left /
+        50% 50% no-repeat,
+      linear-gradient(to top left, #add100 23%, #88992f 50%) top left / 50% 50%
+        no-repeat,
+      linear-gradient(to top right, #add100 23%, #88992f 50%) top right / 50%
+        50% no-repeat;
+    box-shadow: 0 0 8px #aaaaaa;
+    &:hover {
+      text-decoration: none;
+      box-shadow: 0 0 8px #000000;
+    }
+
+    @include desktop {
+      border: #fff 4px solid;
+      padding: 6px 25px;
+    }
+    img {
+      width: 25px;
+      @include desktop {
+        width: 35px;
+      }
+    }
+    .desc {
+      color: #000;
+      font-size: 20px;
+      font-weight: 500;
+      margin: 0;
+      padding: 0;
+      @include desktop {
+        font-size: 35px;
+      }
+    }
+  }*/
 }
 @media screen and (min-width: 1024px) {
   main {
-    padding: 90px 0;
+    padding: 100px 0;
     gap: 30px;
     background-position: center;
   }
 }
 @media screen and (min-width: 1500px) {
   main {
-    gap: 50px;
+    padding: 230px 0;
   }
 }
 main h1 {
@@ -50,53 +95,26 @@ main h1 {
   }
 }
 main h1 .logo {
-  max-width: 604px;
+  max-width: 454px;
   width: 100%;
 }
-@media screen and (min-width: 1500px) {
-  main h1 .logo {
-    max-width: 754px;
-  }
+main .andor2 {
+  width: max-content;
+  margin: 0 auto;
+  text-align: center;
 }
-main .ancor {
-  padding: 0px 25px;
-  border: #fff 3px solid;
-  display: flex;
-  gap: 8px;
-  align-items: center;
-  justify-content: center;
-  border-radius: 50px;
-  margin-bottom: 20px;
-  background: linear-gradient(to bottom right, #add100 23%, #88992f 50%) bottom right/50% 50% no-repeat, linear-gradient(to bottom left, #add100 23%, #88992f 50%) bottom left/50% 50% no-repeat, linear-gradient(to top left, #add100 23%, #88992f 50%) top left/50% 50% no-repeat, linear-gradient(to top right, #add100 23%, #88992f 50%) top right/50% 50% no-repeat;
-  box-shadow: 0 0 8px #aaaaaa;
-}
-main .ancor:hover {
+main .andor2:hover {
   text-decoration: none;
-  box-shadow: 0 0 8px #000000;
+}
+main .andor2 img {
+  border: transparent solid 0.2px;
+  border-radius: 55px;
+  box-shadow: 0 0 8px black;
+  width: 200px;
 }
 @media screen and (min-width: 1024px) {
-  main .ancor {
-    border: #fff 6px solid;
-  }
-}
-main .ancor img {
-  width: 25px;
-}
-@media screen and (min-width: 1024px) {
-  main .ancor img {
-    width: 35px;
-  }
-}
-main .ancor .desc {
-  color: #000;
-  font-size: 20px;
-  font-weight: 500;
-  margin: 0;
-  padding: 0;
-}
-@media screen and (min-width: 1024px) {
-  main .ancor .desc {
-    font-size: 35px;
+  main .andor2 img {
+    width: 255px;
   }
 }
 main .container-clocks {
@@ -114,10 +132,5 @@ main .container-clocks .clocks {
 @media screen and (min-width: 768px) {
   main .container-clocks .clocks {
     width: 150px;
-  }
-}
-@media screen and (min-width: 1024px) {
-  main .container-clocks .clocks {
-    width: auto;
   }
 }
