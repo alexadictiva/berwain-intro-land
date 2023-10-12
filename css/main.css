@@ -119,11 +119,11 @@ main .andor2 img {
 }
 main .container-clocks {
   display: flex;
-  gap: 15px;
+  gap: 0;
 }
-@media screen and (min-width: 1500px) {
+@media screen and (min-width: 1024px) {
   main .container-clocks {
-    gap: 20px;
+    margin-top: 30px;
   }
 }
 main .container-clocks .clocks {

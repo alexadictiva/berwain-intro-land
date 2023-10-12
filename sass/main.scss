@@ -127,10 +127,11 @@ main {
   }
   .container-clocks {
     display: flex;
-    gap: 15px;
-    @include b-desktop {
-      gap: 20px;
+    gap: 0;
+    @include desktop {
+      margin-top: 30px;
     }
+
     .clocks {
       width: 100px;
       @include tablet {
