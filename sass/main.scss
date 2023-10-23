@@ -47,7 +47,7 @@ main {
   width: 100%;
   @include desktop {
     padding: 100px 0;
-    gap: 30px;
+    gap: 20px;
     background-position: center;
   }
   @include b-desktop {
@@ -60,11 +60,11 @@ main {
       padding: 0 90px;
     }
     .logo {
-      max-width: 454px;
+      max-width: 560px;
       width: 100%;
     }
   }
-  /*.ancor {
+  .ancor {
     padding: 0px 25px;
     border: #fff 3px solid;
     display: flex;
@@ -72,15 +72,8 @@ main {
     align-items: center;
     justify-content: center;
     border-radius: 50px;
-    margin-bottom: 20px;
-    background: linear-gradient(to bottom right, #add100 23%, #88992f 50%)
-        bottom right / 50% 50% no-repeat,
-      linear-gradient(to bottom left, #add100 23%, #88992f 50%) bottom left /
-        50% 50% no-repeat,
-      linear-gradient(to top left, #add100 23%, #88992f 50%) top left / 50% 50%
-        no-repeat,
-      linear-gradient(to top right, #add100 23%, #88992f 50%) top right / 50%
-        50% no-repeat;
+    margin-bottom: 15px;
+    background-color: #add100;
     box-shadow: 0 0 8px #aaaaaa;
     &:hover {
       text-decoration: none;
@@ -88,13 +81,14 @@ main {
     }
 
     @include desktop {
+      margin-bottom: 10px;
       border: #fff 4px solid;
       padding: 6px 25px;
     }
     img {
       width: 25px;
       @include desktop {
-        width: 35px;
+        width: 40px;
       }
     }
     .desc {
@@ -104,10 +98,11 @@ main {
       margin: 0;
       padding: 0;
       @include desktop {
-        font-size: 35px;
+        font-size: 30px;
       }
     }
-  }*/
+  }
+  /*
   .andor2 {
     width: max-content;
     margin: 0 auto;
@@ -124,7 +119,7 @@ main {
         width: 255px;
       }
     }
-  }
+  }*/
   .container-clocks {
     display: flex;
     gap: 0;
